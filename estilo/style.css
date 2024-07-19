@@ -30,14 +30,41 @@ header {
     padding-bottom: 15px;
     font-family: var(--font02);
     box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.411);
-    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 div#container-1 {
-    width: 1250px;
-    margin: auto;
+    width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav#login {
+    display: flex;
+    justify-content: center;
+}
+nav#login > a {
+    padding: 17;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+nav#menu {
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.452);
+    padding: 17px;
+}
+nav#menu > a {
+    padding: 17px;
+    border-radius: 8px; 
+    transition-duration: .5s;
+}
+nav#menu > a:hover{
+    background-color: var(--cor03);
 }
 header h1 {
-    display: inline-block;
     padding: 5px 10px;
     font-family: var(--font03);
     border: 1px solid var(--cor02);
@@ -47,37 +74,15 @@ header h1 {
     box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.411);
     margin-right: 15px;
     font-weight: 900;
-    
+    cursor: pointer;
 }
-header > div > a {
-    display: inline-block;
-    text-align: right;
+a#entrar {
+    padding: 17px;
+    border-radius: 10px;
+    margin: auto 10px;
 }
-nav#login, nav#menu {
-    display: inline-block;
-    vertical-align: super;
-}
-nav#login > a {
-    padding-left: 15px;
-    margin-left: 40px;
-    font-weight: bolder;
-    font-size: 1.2em;
-}
-nav#login {
-    width: 55%;
-    text-align: end;
-}
-nav#menu {
-    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.452);
-}
-nav#menu > a {
-    padding: 15px 8px;
-    border-radius: 8px; 
-    transition-duration: .5s;
-}
-nav#menu > a:hover{
-    background-color: var(--cor03);
-
+a#entrar:hover{
+    box-shadow: 0px 0px 9px #4426699f;
 }
 a#sign {
     background-color: var(--cor03);
@@ -293,4 +298,11 @@ footer p {
     text-align: center;
     padding-bottom: 5px;
     font-family: var(--font02);
+}
+div.container-4 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1500px;
 }
