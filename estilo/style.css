@@ -270,16 +270,15 @@ footer {
     background-color: #282A2A;
 }
 footer > div {
-    width: 1200px;
     height: 370px;
-    margin: auto;    
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 footer > div > ol {
     margin-top: 100px;
-    display: block;
-    width: 190px;
-    float: left;
-    padding-left: 50px;
     list-style: none;
     font-family: var(--font02);
     line-height: 2.0;
