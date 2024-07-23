@@ -211,7 +211,6 @@ section.secundario img {
     height: 400px;
     height: 770px;
     display: flex;
-    justify-content: space-around;
 }
 .container-4 aside {
     width: 320px;
@@ -298,11 +297,4 @@ footer p {
     text-align: center;
     padding-bottom: 5px;
     font-family: var(--font02);
-}
-div.container-4 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
-    height: 1500px;
 }
